@@ -10,7 +10,8 @@ class Body extends StatelessWidget {
         SearchBox(
           onChanged: (value) {},
         ),
-        categoryList()
+        CategoryList(),
+
       ],
     );
   }
