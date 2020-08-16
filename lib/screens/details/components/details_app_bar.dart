@@ -3,6 +3,7 @@ import 'package:flutter_svg/svg.dart';
 
 AppBar detailsAppBar() {
   return AppBar(
+    elevation: 0.0,
     leading: IconButton(
       icon: Icon(
         Icons.arrow_back,
