@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'components/app_bar.dart';
+import 'components/body.dart';
 
 class HomeScreen extends StatelessWidget {
   final title;
@@ -8,23 +9,7 @@ class HomeScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: homeAppBar(context),
-//      body: Body(),
-    );
-  }
-}
-
-class Body extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return Column(
-      children: [
-        Container(
-          decoration: BoxDecoration(
-            border: Border.all(),
-          ),
-          child: TextField(),
-        ),
-      ],
+      body: Body(),
     );
   }
 }
