@@ -11,7 +11,6 @@ class Body extends StatelessWidget {
           onChanged: (value) {},
         ),
         CategoryList(),
-
       ],
     );
   }
