@@ -17,6 +17,9 @@ class DiscountCard extends StatelessWidget {
               color: kTextColor,
             ),
           ),
+          SizedBox(
+            height: 10.0,
+          ),
           Container(
             width: double.infinity,
             height: 166.0,
