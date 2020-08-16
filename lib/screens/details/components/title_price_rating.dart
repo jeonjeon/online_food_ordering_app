@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:smooth_star_rating/smooth_star_rating.dart';
 import '../../../constants.dart';
-import '../details-screen.dart';
 
 class TitlePriceRating extends StatelessWidget {
   final int price, numberOfReviews;
@@ -72,5 +71,24 @@ class TitlePriceRating extends StatelessWidget {
         ),
       ),
     );
+  }
+}
+
+class PriceClipper extends CustomClipper<Path> {
+  @override
+  Path getClip(Size size) {
+    Path path = Path();
+    double ignoreHeight = 20;
+    path.lineTo(0, size.height - ignoreHeight);
+    path.lineTo(size.width / 2, size.height);
+    path.lineTo(size.width, size.height - ignoreHeight);
+    path.lineTo(size.width, 0);
+    return path;
+  }
+
+  @override
+  bool shouldReclip(CustomClipper<Path> oldClipper) {
+    // TODO: implement shouldReclip
+    return true;
   }
 }
